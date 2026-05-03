@@ -25,7 +25,7 @@ export default function About() {
 
             <div className="relative border-4 border-white overflow-hidden aspect-[3/4]">
               <motion.img
-                src="/src/imports/IMG_9352_2.jpg"
+                src="IMG_9352_2.jpg"
                 alt="Mahmoud Mohamed Amer"
                 className="w-full h-full object-cover"
                 whileHover={{ scale: 1.05 }}

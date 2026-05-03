@@ -4,25 +4,25 @@ import { useRef } from 'react';
 const portfolioItems = [
   {
     id: 1,
-    image: '/src/imports/IMG_9371.jpg',
+    image: 'IMG_9371.jpg',
     title: 'BRAND SYSTEMS',
     year: '2026',
   },
   {
     id: 2,
-    image: '/src/imports/IMG_9372_2.jpg',
+    image: 'IMG_9372_2.jpg',
     title: 'ENTERTAINMENT',
     year: '2025',
   },
   {
     id: 3,
-    image: '/src/imports/IMG_9373.PNG',
+    image: 'IMG_9373.PNG',
     title: 'EDITORIAL',
     year: '2025',
   },
   {
     id: 4,
-    image: '/src/imports/IMG_9374.PNG',
+    image: 'IMG_9374.PNG',
     title: 'IDENTITY',
     year: '2024',
   },

@@ -4,28 +4,28 @@ import { useRef, useState } from 'react';
 const projects = [
   {
     id: 1,
-    image: '/src/imports/IMG_9371.jpg',
+    image: 'IMG_9371.jpg',
     title: 'BRAND DESIGN',
     category: 'COMMERCIAL',
     description: 'McDonald\'s & ENVIE Food Branding',
   },
   {
     id: 2,
-    image: '/src/imports/IMG_9372_2.jpg',
+    image: 'IMG_9372_2.jpg',
     title: 'MUSIC POSTERS',
     category: 'ENTERTAINMENT',
     description: 'Artist Promotion & Event Design',
   },
   {
     id: 3,
-    image: '/src/imports/IMG_9373.PNG',
+    image: 'IMG_9373.PNG',
     title: 'CREATIVE WORK',
     category: 'EDITORIAL',
     description: 'Bold Typography & Visual Impact',
   },
   {
     id: 4,
-    image: '/src/imports/IMG_9374.PNG',
+    image: 'IMG_9374.PNG',
     title: 'LOGO DESIGN',
     category: 'BRANDING',
     description: 'Modern Brand Identity Systems',
