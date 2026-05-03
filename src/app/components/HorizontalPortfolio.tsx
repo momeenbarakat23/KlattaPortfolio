@@ -1,28 +1,32 @@
 import { motion, useScroll, useTransform } from 'motion/react';
 import { useRef } from 'react';
+import img1 from '../../imports/IMG_9371.jpg'
+import img2 from '../../imports/IMG_9372_2.jpg'
+import img3 from '../../imports/IMG_9373.PNG'
+import img4 from '../../imports/IMG_9374.PNG'
 
 const portfolioItems = [
   {
     id: 1,
-    image: 'IMG_9371.jpg',
+    image: {img1},
     title: 'BRAND SYSTEMS',
     year: '2026',
   },
   {
     id: 2,
-    image: 'IMG_9372_2.jpg',
+    image: {img2},
     title: 'ENTERTAINMENT',
     year: '2025',
   },
   {
     id: 3,
-    image: 'IMG_9373.PNG',
+    image: {img3},
     title: 'EDITORIAL',
     year: '2025',
   },
   {
     id: 4,
-    image: 'IMG_9374.PNG',
+    image: {img4},
     title: 'IDENTITY',
     year: '2024',
   },
@@ -34,6 +38,14 @@ export default function HorizontalPortfolio() {
     target: containerRef,
     offset: ['start end', 'end start'],
   });
+  const portfolioItems = [
+  {
+    id: 1,
+    title: "Project",
+    image: [img1, img2, img3, img4],
+    year:"2026"
+  }
+  ];
 
   const x = useTransform(scrollYProgress, [0, 1], ['0%', '-50%']);
 
@@ -66,6 +78,7 @@ export default function HorizontalPortfolio() {
         className="flex gap-8 px-4 md:px-16"
       >
         {[...portfolioItems, ...portfolioItems].map((item, index) => (
+          
           <motion.div
             key={`${item.id}-${index}`}
             className="flex-shrink-0 w-[80vw] md:w-[40vw] group"
@@ -74,7 +87,7 @@ export default function HorizontalPortfolio() {
           >
             <div className="border border-white aspect-[4/5] overflow-hidden relative">
               <motion.img
-                src={item.image}
+                src={item.image[index]}
                 alt={item.title}
                 className="w-full h-full object-cover"
                 whileHover={{ scale: 1.1 }}

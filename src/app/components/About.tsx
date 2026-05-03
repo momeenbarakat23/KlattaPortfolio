@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import person from '../../imports/IMG_9352_2.jpg'
 
 export default function About() {
   return (
@@ -25,7 +26,7 @@ export default function About() {
 
             <div className="relative border-4 border-white overflow-hidden aspect-[3/4]">
               <motion.img
-                src="IMG_9352_2.jpg"
+                src={person}
                 alt="Mahmoud Mohamed Amer"
                 className="w-full h-full object-cover"
                 whileHover={{ scale: 1.05 }}

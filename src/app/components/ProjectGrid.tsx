@@ -1,31 +1,35 @@
 import { motion, useScroll, useTransform } from 'motion/react';
 import { useRef, useState } from 'react';
+import img1 from '../../imports/IMG_9371.jpg'
+import img2 from '../../imports/IMG_9372_2.jpg'
+import img3 from '../../imports/IMG_9373.PNG'
+import img4 from '../../imports/IMG_9374.PNG'
 
 const projects = [
   {
     id: 1,
-    image: 'IMG_9371.jpg',
+    image: '../../imports/IMG_9371.jpg',
     title: 'BRAND DESIGN',
     category: 'COMMERCIAL',
     description: 'McDonald\'s & ENVIE Food Branding',
   },
   {
     id: 2,
-    image: 'IMG_9372_2.jpg',
+    image: '../../imports/IMG_9372_2.jpg',
     title: 'MUSIC POSTERS',
     category: 'ENTERTAINMENT',
     description: 'Artist Promotion & Event Design',
   },
   {
     id: 3,
-    image: 'IMG_9373.PNG',
+    image: '../../imports/IMG_9373.PNG',
     title: 'CREATIVE WORK',
     category: 'EDITORIAL',
     description: 'Bold Typography & Visual Impact',
   },
   {
     id: 4,
-    image: 'IMG_9374.PNG',
+    image: '../../imports/IMG_9374.PNG',
     title: 'LOGO DESIGN',
     category: 'BRANDING',
     description: 'Modern Brand Identity Systems',
